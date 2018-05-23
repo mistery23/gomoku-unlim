@@ -1,0 +1,9 @@
+<div class="messageContainer">
+  <h2 class="mat-h2">Player {{data.player | uppercase}} wins</h2>
+  <h2 class="mat-h2">in {{data.turn}} turns</h2>
+</div>
+<div class="buttonContainer">
+  <button mat-raised-button color="accent" (click)="onClose(false)">Back to home</button>
+  <button mat-raised-button color="primary" (click)="onClose(true)">New game</button>
+</div>
+

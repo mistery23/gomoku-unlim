@@ -1,0 +1,35 @@
+<div class="head">
+  <div class="playerName">
+   <h2 class="mat-h2">{{player1.name}}</h2> 
+  <div class="underline"
+       [style.background-color]="player1.color"
+       [style.height.px]="playerTurn==1?4:2">
+  </div>
+  </div>
+  <h2 class="count mat-h2">{{count}}</h2>
+  <div class="playerName">
+    <h2 class="mat-h2">{{player2.name}}</h2>
+    <div class="underline"
+         [style.background-color]="player2.color"
+         [style.height.px]="playerTurn==2?4:2">
+    </div>
+  </div>
+</div>
+
+<div class="board">
+  <div class="game">
+    <div class="row" *ngFor="let row of gameService.gameMatrix">
+      <app-cell 
+        [@addCell] 
+        *ngFor="let cell of row" 
+        [cell]="cell" 
+        (click)="onCellClick(cell)">
+      </app-cell>
+    </div>
+  </div>
+</div>
+
+<div class="buttonContainer">
+  <button mat-raised-button color="accent" (click)="onBackClick()">Back</button>
+  <button mat-raised-button color="primary" (click)="onNew()">New</button>
+</div>

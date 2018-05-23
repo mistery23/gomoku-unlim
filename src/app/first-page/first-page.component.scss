@@ -1,0 +1,81 @@
+:host{
+  width:100%;
+  height:600px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.firstPageContainer {
+  height: 350px;
+  width: 600px;
+  border: 1px solid #cfd8dc;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.sidepanel {
+  height: 100%;
+  width: 80px;
+  margin-right:10px;
+  background-color: #3949ab;
+}
+.form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+.name {
+  height:70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin: 0px;
+}
+.player {
+  height: 50px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.colorContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.colorExample{
+  display: flex;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid ligtgrey;
+}
+.colorName{
+  margin-left: 15px;
+  display: flex;
+}
+.thirdRowContainer {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 80px;
+}
+.buttonContainer{
+  display: flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+.errorConainer {
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
