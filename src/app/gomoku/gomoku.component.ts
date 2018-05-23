@@ -30,7 +30,7 @@ export class GomokuComponent implements OnInit {
 
 
   constructor(
-    private gameService: GameService,
+    public gameService: GameService,
     private dialog: MatDialog,
     private router: Router
   ) { }
